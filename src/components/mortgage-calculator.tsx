@@ -23,7 +23,7 @@ const MortgageCalculator: Component = () => {
     if (isNaN(num) || !isFinite(num)) {
       return "0";
     }
-    return num.toLocaleString();
+    return num.toFixed(2).toLocaleString();
   }
 
   return (
